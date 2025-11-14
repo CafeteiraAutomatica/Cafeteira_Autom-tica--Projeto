@@ -1,76 +1,50 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Cafeteira Automática com Moedor — Início</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteira Automática – Introdução</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="brand">
-      <div class="logo">☕</div>
-      <div class="brand-text">
-        <h1>Cafeteira Automática com Moedor</h1>
-        <div class="tag">Arduino + Servos — Café fresco no horário que você quiser</div>
-      </div>
-    </div>
 
-    <nav class="main-nav" id="mainNav">
-      <button class="nav-burger" id="navBurger" aria-label="Abrir menu">☰</button>
-      <ul>
-        <li><a href="index.html" class="active">Início</a></li>
-        <li><a href="aprofundamento.html">Aprofundamento</a></li>
-        <li><a href="infografico.html">Infográfico</a></li>
-      </ul>
+<header class="nav-bar">
+    <div class="logo">☕</div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Introdução</a></li>
+            <li><a href="aprofundamento.html">Aprofundamento</a></li>
+            <li><a href="infografico.html">Infográfico</a></li>
+        </ul>
     </nav>
-  </header>
+</header>
 
-  <main>
+<main class="container">
+
     <section class="hero">
-      <div class="hero-left">
-        <h2>Um jeito prático de começar o dia com café moído na hora</h2>
-        <p>Nosso projeto integra um moedor e uma cafeteira controlados por Arduino e servomotores para entregar café fresco automaticamente no horário escolhido.</p>
-        <a class="btn" href="aprofundamento.html">Saiba mais</a>
-      </div>
-      <div class="hero-right">
-        <div class="coffee-machine">
-          <div class="cup"></div>
-          <div class="steam steam-1"></div>
-          <div class="steam steam-2"></div>
+        <div class="hero-text">
+            <h1>Cafeteira Automática com Moedor</h1>
+            <p>Um projeto desenvolvido para oferecer café fresco, moído e preparado automaticamente no horário desejado.</p>
         </div>
-      </div>
+
+        <div class="hero-img">
+            <div class="coffee-art"></div>
+        </div>
     </section>
 
-    <section class="container project-summary">
-      <h3>Resumo do Projeto</h3>
-      <p><strong>Integrantes:</strong> RIBEIRO, Murilo; ROCHA, Reginaldo; MENDES, Nicolas; AMARAL, Bruno.</p>
-      <p><strong>Orientador:</strong> (1 Orientador)</p>
-
-      <h4>Introdução</h4>
-      <p>No mundo acelerado de hoje, a conveniência é fundamental. Imagine acordar e ser recebido pelo aroma do café moído na hora — é isso que buscamos com a cafeteira automática com moedor.</p>
-
-      <h4>Objetivo</h4>
-      <p>Criar uma cafeteira automática com moedor controlada por Arduino e servomotores para oferecer café fresco no horário desejado.</p>
+    <section class="content-box">
+        <h2>Integrantes</h2>
+        <p>• Ribeiro, Murilo<br>
+        • Rocha, Reginaldo<br>
+        • Mendes, Nicolas<br>
+        • Amaral, Bruno</p>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <p>VIII IFCIÊNCIA – FEIRA DE CIÊNCIA, MOSTRA TECNOLÓGICA E EMPREENDEDORISMO DE SALTO • © 2025</p>
-  </footer>
+</main>
 
-  <script>
-    (function(){
-      const burger = document.getElementById('navBurger');
-      const nav = document.getElementById('mainNav');
-      burger.addEventListener('click', () => nav.classList.toggle('open'));
-      document.addEventListener('click', e => {
-        if (!nav.contains(e.target) && nav.classList.contains('open')) nav.classList.remove('open');
-      });
-    })();
-  </script>
+<footer>
+    <p>Orientador(a): responsável pela orientação do projeto.</p>
+</footer>
+
 </body>
 </html>
