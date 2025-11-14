@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cafeteira Automática com Moedor — Aprofundamento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">☕</div>
+      <div class="brand-text">
+        <h1>Cafeteira Automática com Moedor</h1>
+        <div class="tag">Detalhamento técnico e desenvolvimento</div>
+      </div>
+    </div>
+
+    <nav class="main-nav" id="mainNav2">
+      <button class="nav-burger" id="navBurger2" aria-label="Abrir menu">☰</button>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="aprofundamento.html" class="active">Aprofundamento</a></li>
+        <li><a href="infografico.html">Infográfico</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container content">
+    <h2>Aprofundamento do Projeto</h2>
+    <p>Nesta página detalhamos a metodologia, o funcionamento interno do sistema e as decisões técnicas que deram forma à cafeteira automática com moedor.</p>
+
+    <section class="deep-section">
+      <h3>Metodologia</h3>
+      <ul>
+        <li>Pesquisa de equipamentos adequados;</li>
+        <li>Seleção de componentes (Arduino, servomotores, moedor, resistência, sensores);</li>
+        <li>Montagem da estrutura e integração do moedor;</li>
+        <li>Programação do Arduino para controle dos servos e lógica de preparo;</li>
+        <li>Testes, ajustes e documentação;</li>
+        <li>Planejamento de expansões futuras (automação, conectividade).</li>
+      </ul>
+    </section>
+
+    <section class="deep-section">
+      <h3>Funcionamento do Sistema</h3>
+      <ol>
+        <li>Ativação do moedor no horário configurado;</li>
+        <li>Depósito automático do pó moído no filtro;</li>
+        <li>Aquecimento da água com controle via resistência;</li>
+        <li>Acionamento dos servos para gestão do fluxo de água;</li>
+        <li>Despejo automático do café pronto na xícara.</li>
+      </ol>
+      <p>O processo é gerenciado pelo Arduino, garantindo precisão e repetibilidade.</p>
+    </section>
+
+    <section class="deep-section">
+      <h3>Resultados e Discussão</h3>
+      <p>O protótipo possibilita preparar café fresco automaticamente, reduzindo intervenção manual e abrindo caminho para integração com aplicativos e assistentes.</p>
+    </section>
+
+    <section class="deep-section">
+      <h3>Futuras Expansões</h3>
+      <ul>
+        <li>Conexão Wi-Fi para controle remoto;</li>
+        <li>Aplicativo para definir horários e intensidade do café;</li>
+        <li>Monitoramento de temperatura em tempo real;</li>
+        <li>Integração com Alexa/Google Assistant.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Integrantes: RIBEIRO, Murilo; ROCHA, Reginaldo; MENDES, Nicolas; AMARAL, Bruno • Orientador: 1</p>
+  </footer>
+
+  <script>
+    (function(){
+      const burger = document.getElementById('navBurger2');
+      const nav = document.getElementById('mainNav2');
+      burger.addEventListener('click', () => nav.classList.toggle('open'));
+      document.addEventListener('click', e => {
+        if (!nav.contains(e.target) && nav.classList.contains('open')) nav.classList.remove('open');
+      });
+    })();
+  </script>
+</body>
+</html>

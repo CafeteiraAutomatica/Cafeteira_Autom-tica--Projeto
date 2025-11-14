@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cafeteira Automática com Moedor — Infográfico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">☕</div>
+      <div class="brand-text">
+        <h1>Cafeteira Automática com Moedor</h1>
+        <div class="tag">Infográfico — em construção</div>
+      </div>
+    </div>
+
+    <nav class="main-nav" id="mainNav3">
+      <button class="nav-burger" id="navBurger3" aria-label="Abrir menu">☰</button>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="aprofundamento.html">Aprofundamento</a></li>
+        <li><a href="infografico.html" class="active">Infográfico</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container centered">
+    <section class="infographic-placeholder">
+      <h2>Infográfico — Em elaboração</h2>
+      <p>O infográfico será inserido aqui quando estiver pronto. Você pode colocar uma imagem PNG/SVG em <code>assets/infografico.png</code> ou colar um SVG diretamente.</p>
+      <div class="infografico-box">
+        <p><em>Área reservada para o infográfico</em></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>VIII IFCIÊNCIA – FEIRA DE CIÊNCIA, MOSTRA TECNOLÓGICA E EMPREENDEDORISMO DE SALTO</p>
+  </footer>
+
+  <script>
+    (function(){
+      const burger = document.getElementById('navBurger3');
+      const nav = document.getElementById('mainNav3');
+      burger.addEventListener('click', () => nav.classList.toggle('open'));
+      document.addEventListener('click', e => {
+        if (!nav.contains(e.target) && nav.classList.contains('open')) nav.classList.remove('open');
+      });
+    })();
+  </script>
+</body>
+</html>
