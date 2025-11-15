@@ -1,49 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Cafeteira - Início</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Cafeteira Automática – Introdução</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html" class="ativo">Início</a></li>
-            <li><a href="sobre.html">Sobre o Projeto</a></li>
-            <li><a href="conteudo.html">Conteúdo</a></li>
+<header class="nav-bar">
+    <div class="logo">☕</div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Introdução</a></li>
+            <li><a href="aprofundamento.html">Aprofundamento</a></li>
+            <li><a href="infografico.html">Infográfico</a></li>
         </ul>
     </nav>
 </header>
 
-<section class="hero">
-    <div class="texto">
-        <h1>Bem-vindo ao Projeto CWEB</h1>
-        <p>Um site criado especialmente para apresentar seu trabalho com estilo e organização.</p>
+<main class="container">
+
+<section class="hero-large">
+
+    <div class="hero-text">
+        <h1>Cafeteira Automática</h1>
+        <p>
+            Uma cafeteira automática é um aparelho que prepara café de forma prática, 
+            utilizando sistemas internos de aquecimento, filtragem e pressão. 
+            Esta página apresenta a introdução ao funcionamento básico desse equipamento.
+        </p>
     </div>
 
-    <div class="cafe-container">
-        <div class="circulo"></div>
+    <div class="coffee-animation">
+        <div class="coffee-cup hover-animate">
+            <div class="cup-body"></div>
+            <div class="cup-handle"></div>
 
-        <div class="xicara">
-            <div class="corpo"></div>
-            <div class="alca"></div>
-            <div class="vapor">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <div class="steam steam1"></div>
+            <div class="steam steam2"></div>
+            <div class="steam steam3"></div>
         </div>
     </div>
+
 </section>
 
+<section class="content-box">
+    <p>
+        As cafeteiras automáticas facilitam o preparo do café ao controlar temperatura, 
+        fluxo de água e intensidade da bebida. Utilizam sensores internos e sistemas 
+        de aquecimento precisos para garantir qualidade e repetibilidade no sabor.
+    </p>
+</section>
+
+</main>
+
 <footer>
-    <p>Produzido por alunos do IFSP.</p>
+    <p>Orientador(a)</p>
 </footer>
 
 </body>
 </html>
-
-
