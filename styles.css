@@ -23,6 +23,10 @@ body{
     flex-direction:column;
 }
 
+/* ============================= */
+/* Header */
+/* ============================= */
+
 header{
     background:var(--creme);
     padding:18px 35px;
@@ -56,6 +60,10 @@ header{
     color:white;
 }
 
+/* ============================= */
+/* Container */
+/* ============================= */
+
 .container{
     max-width:1100px;
     width:100%;
@@ -63,6 +71,10 @@ header{
     padding:50px 25px;
     flex:1;
 }
+
+/* ============================= */
+/* Hero Section */
+/* ============================= */
 
 .hero-large{
     display:flex;
@@ -87,7 +99,7 @@ header{
 }
 
 /* ============================= */
-/* Círculo de café animado       */
+/* Círculo de café animado */
 /* ============================= */
 
 .circle-coffee{
@@ -115,7 +127,6 @@ header{
     background:var(--marrom-claro);
 }
 
-/* Ondas dentro do café */
 .coffee-wave{
     position:absolute;
     width:300%;
@@ -138,59 +149,7 @@ header{
 }
 
 /* ============================= */
-/* XÍCARA (ao lado)              */
-/* ============================= */
-
-.coffee-cup{
-    position:relative;
-    width:220px;
-    height:220px;
-}
-
-.cup-body{
-    width:180px;
-    height:120px;
-    background:var(--marrom);
-    border-radius:0 0 50px 50px;
-    position:absolute;
-    bottom:0;
-    left:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.3);
-}
-
-.cup-handle{
-    width:55px;
-    height:55px;
-    border:8px solid var(--marrom);
-    border-radius:50%;
-    position:absolute;
-    right:-5px;
-    top:55px;
-}
-
-.steam{
-    width:18px;
-    height:60px;
-    background:linear-gradient(to top, rgba(255,255,255,0.7), transparent);
-    filter:blur(6px);
-    position:absolute;
-    top:-20px;
-    left:80px;
-    animation:steamRise 3s infinite ease-in-out;
-    border-radius:20px;
-}
-
-.steam2{ left:110px; animation-duration:3.6s; }
-.steam3{ left:95px; animation-duration:4s; }
-
-@keyframes steamRise{
-    0%{ opacity:0; transform:translateY(10px); }
-    40%{ opacity:1; }
-    100%{ opacity:0; transform:translateY(-40px); }
-}
-
-/* ============================= */
-/* Conteúdo                      */
+/* Content Box */
 /* ============================= */
 
 .content-box{
@@ -202,7 +161,24 @@ header{
 }
 
 /* ============================= */
-/* Footer                        */
+/* Infográfico */
+/* ============================= */
+
+.infografico-placeholder{
+    width:100%;
+    height:350px;
+    border:4px dashed var(--marrom-claro);
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    margin-top:20px;
+    background:rgba(255,255,255,0.6);
+}
+
+/* ============================= */
+/* Footer */
 /* ============================= */
 
 footer{
