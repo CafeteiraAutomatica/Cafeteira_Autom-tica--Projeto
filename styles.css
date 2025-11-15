@@ -86,7 +86,10 @@ header{
     line-height:1.6;
 }
 
-/* círculo marrom com animação */
+/* ============================= */
+/* Círculo de café animado       */
+/* ============================= */
+
 .circle-coffee{
     width:260px;
     height:260px;
@@ -95,37 +98,49 @@ header{
     position:relative;
     overflow:hidden;
     box-shadow:0 8px 25px rgba(0,0,0,0.25);
+    transform:translateY(0);
+    animation:cupFloat 4s ease-in-out infinite;
+}
+
+@keyframes cupFloat{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-12px); }
 }
 
 .coffee-liquid{
     position:absolute;
     bottom:0;
     width:100%;
-    height:55%;
+    height:60%;
     background:var(--marrom-claro);
 }
 
+/* Ondas dentro do café */
 .coffee-wave{
     position:absolute;
-    width:200%;
-    height:90px;
-    background:rgba(255,255,255,0.12);
-    top:40%;
-    left:-50%;
+    width:300%;
+    height:120px;
+    background:rgba(255,255,255,0.15);
+    top:35%;
+    left:-100%;
     border-radius:50%;
-    animation:waveMove 5s infinite linear;
+    animation:waveMove 6s infinite linear;
+    z-index:5;
 }
 
-.wave1{animation-duration:6s;opacity:0.5;}
-.wave2{animation-duration:4s;top:45%;opacity:0.4;}
-.wave3{animation-duration:7s;top:50%;opacity:0.3;}
+.wave1{ animation-duration:6s; opacity:0.5; top:38%; }
+.wave2{ animation-duration:4.8s; opacity:0.4; top:43%; }
+.wave3{ animation-duration:7.2s; opacity:0.3; top:47%; }
 
 @keyframes waveMove{
-    0%{transform:translateX(0);}
-    100%{transform:translateX(50%);}
+    0%{ transform:translateX(0); }
+    100%{ transform:translateX(60%); }
 }
 
-/* xícara */
+/* ============================= */
+/* XÍCARA (ao lado)              */
+/* ============================= */
+
 .coffee-cup{
     position:relative;
     width:220px;
@@ -165,11 +180,18 @@ header{
     border-radius:20px;
 }
 
-.steam2{left:110px;animation-duration:3.6s;}
-.steam3{left:95px;animation-duration:4s;}
+.steam2{ left:110px; animation-duration:3.6s; }
+.steam3{ left:95px; animation-duration:4s; }
 
 @keyframes steamRise{
-    0%{opacity:0;transform:translateY(10px);} 40%{opacity:1;} 100%{opacity:0;transform:translateY(-40px);} }
+    0%{ opacity:0; transform:translateY(10px); }
+    40%{ opacity:1; }
+    100%{ opacity:0; transform:translateY(-40px); }
+}
+
+/* ============================= */
+/* Conteúdo                      */
+/* ============================= */
 
 .content-box{
     background:var(--branco);
@@ -178,6 +200,10 @@ header{
     box-shadow:0 8px 20px rgba(0,0,0,0.1);
     font-size:18px;
 }
+
+/* ============================= */
+/* Footer                        */
+/* ============================= */
 
 footer{
     background:var(--creme);
