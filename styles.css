@@ -186,10 +186,13 @@ footer{
 }
 
 :root{
-    --cursor-coffee: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="%233a2a20" d="M6 9h16v2a6 6 0 0 1-6 6H6v6a2 2 0 0 0 2 2h12v-2H8v-6h8a8 8 0 0 0 8-8V9H6z"/><path fill="%23ffffff" d="M22 7a1 1 0 0 1 0-2c1.657 0 3 1.343 3 3s-1.343 3-3 3a1 1 0 0 1 0-2c.553 0 1-.447 1-1s-.447-1-1-1z"/></svg>') 16 16, auto;
+    --cursor-coffee: url('data:image/svg+xml;utf8,
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+        <path fill="%233a2a20" d="M3 8h13v7a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8zm15 0h2a2 2 0 0 1 0 4h-2V8z"/>
+        <path fill="%233a2a20" d="M8 4c0-.6.4-1 1-1s1 .4 1 1v2H8V4zm4 0c0-.6.4-1 1-1s1 .4 1 1v2h-2V4z"/>
+    </svg>') 12 12, auto;
 }
 
-html, body, * , *::before, *::after {
+html, body, *, *::before, *::after{
     cursor: var(--cursor-coffee);
 }
-
