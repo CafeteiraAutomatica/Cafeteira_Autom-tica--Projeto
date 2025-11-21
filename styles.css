@@ -7,8 +7,7 @@
     --creme:#e3d4c3;
     --branco:#ffffff;
 
-    --cursor-coffee: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 72 72'><g><path fill='%23ffffff' d='M12 20h40v22a12 12 0 0 1-12 12H24a12 12 0 0 1-12-12V20z'/><path fill='%23d0d0d0' d='M52 20h6a8 8 0 0 1 0 16h-6V20z'/><path fill='%238b5e3c' d='M18 20h28v10a14 14 0 0 1-14 14h-4a14 14 0 0 1-14-14V20z'/><path fill='%23b1b1b1' d='M12 18h40v4H12z'/><circle cx='32' cy='26' r='3' fill='%23ffffff'/></g></svg>") 16 16, auto;
-}
+    --cursor-coffee: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 72 72'><path fill='%23ffffff' d='M14 26h38v20a14 14 0 0 1-14 14H28a14 14 0 0 1-14-14V26z'/><path fill='%23d0d0d0' d='M52 26h6a8 8 0 0 1 0 16h-6V26z'/><path fill='%238b5e3c' d='M20 26h26v9a13 13 0 0 1-13 13h-3a13 13 0 0 1-13-13v-9z'/><path fill='%23bfbfbf' d='M14 22h38v4H14z'/><path fill='%23ffffff' d='M31 30a3 3 0 1 1 0 6a3 3 0 1 1 0-6z'/></svg>") 16 16, auto;
 
 *{
     margin:0;
@@ -190,4 +189,5 @@ footer{
 html, body, *, *::before, *::after{
     cursor:var(--cursor-coffee);
 }
+
 
