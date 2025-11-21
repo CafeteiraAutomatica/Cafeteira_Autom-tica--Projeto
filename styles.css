@@ -6,7 +6,7 @@
     --marrom-claro:#a67c52;
     --creme:#e3d4c3;
     --branco:#ffffff;
-    --cursor-coffee: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'><text y='50%' x='50%' dominant-baseline='middle' text-anchor='middle' font-size='60'>☕</text></svg>") 16 16, auto;
+    --cursor-coffee: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 72 72'><text y='50%' x='50%' dominant-baseline='middle' text-anchor='middle' font-size='60'>☕</text></svg>") 8 8, auto;
 
 }
 
@@ -190,6 +190,7 @@ footer{
 html, body, *, *::before, *::after{
     cursor:var(--cursor-coffee);
 }
+
 
 
 
