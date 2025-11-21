@@ -6,8 +6,9 @@
     --marrom-claro:#a67c52;
     --creme:#e3d4c3;
     --branco:#ffffff;
+    --cursor-coffee: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'><text y='50%' x='50%' dominant-baseline='middle' text-anchor='middle' font-size='60'>☕</text></svg>") 16 16, auto;
 
-    --cursor-coffee: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 72 72'><g><path fill='%23ffffff' d='M18 24h32v18a16 16 0 0 1-16 16H34a16 16 0 0 1-16-16V24z'/><path fill='%23d0d0d0' d='M50 24h8a10 10 0 0 1 0 20h-8V24z'/><path fill='%238b5e3c' d='M22 24h24v10a12 12 0 0 1-12 12h-0.5A12 12 0 0 1 22 34V24z'/><circle cx='36' cy='20' r='6' fill='%238b5e3c'/></g></svg>") 16 16, auto;
+}
 
 *{
     margin:0;
@@ -189,5 +190,6 @@ footer{
 html, body, *, *::before, *::after{
     cursor:var(--cursor-coffee);
 }
+
 
 
