@@ -117,6 +117,9 @@ header{
     text-align: center; 
 }
 
+.content-box.small-box {
+    text-align: left;
+}
 
 .infografico{
     display:flex;
@@ -194,6 +197,7 @@ footer{
     color:var(--marrom-claro);
     letter-spacing:1px;
 }
+
 
 
 
