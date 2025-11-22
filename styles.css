@@ -22,7 +22,7 @@ html, body, *, *::before, *::after{
 }
 
 body{
-    font-family:'Nunito',sans-serif;
+    font-family:'Noto Kufi Arabic',sans-serif;
     background:var(--fundo);
     color:var(--marrom);
     min-height:100vh;
@@ -190,4 +190,5 @@ footer{
     height: auto;
     box-shadow: 0 6px 20px rgba(0,0,0,0.15);
     margin: 30px;
+
 
