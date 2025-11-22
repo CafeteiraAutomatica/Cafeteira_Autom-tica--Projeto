@@ -3,7 +3,7 @@
 
 :root{
     --fundo:#f4ece3;
-    --marrom:#2a1f16;
+    --marrom:#5e4129;
     --marrom-claro:#a67c52;
     --creme:#e3d4c3;
     --branco:#ffffff;
@@ -193,3 +193,4 @@ footer{
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     margin: 20px;
 }
+
