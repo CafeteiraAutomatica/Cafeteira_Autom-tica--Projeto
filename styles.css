@@ -7,7 +7,6 @@
     --creme:#e3d4c3;
     --branco:#ffffff;
     --cursor-coffee: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 72 72'><text y='50%' x='50%' dominant-baseline='middle' text-anchor='middle' font-size='60'>☕</text></svg>") 8 8, auto;
-
 }
 
 *{
@@ -59,7 +58,7 @@ header{
 }
 
 .container{
-    max-width:1100px;
+    max-width:1300px;
     width:100%;
     margin:auto;
     padding:50px 25px;
@@ -90,10 +89,12 @@ header{
 
 .content-box{
     background:var(--branco);
-    padding:30px;
+    padding:35px;
     border-radius:15px;
     box-shadow:0 8px 20px rgba(0,0,0,0.1);
     font-size:18px;
+    max-width:1300px;
+    margin:auto;
 }
 
 .infografico-placeholder{
@@ -135,7 +136,6 @@ footer{
         flex-direction:column;
         text-align:center;
     }
-
     .hero-text{
         width:100%;
     }
@@ -145,7 +145,6 @@ footer{
     .hero-text h1{
         font-size:32px;
     }
-
     .hero-text p{
         font-size:17px;
     }
@@ -155,7 +154,6 @@ footer{
     .hero-text h1{
         font-size:28px;
     }
-
     .hero-text p{
         font-size:16px;
     }
@@ -167,7 +165,6 @@ footer{
         gap:10px;
         text-align:center;
     }
-
     .nav-links{
         flex-wrap:wrap;
         justify-content:center;
@@ -180,15 +177,12 @@ footer{
         padding:6px 10px;
         font-size:15px;
     }
-
     .hero-text h1{
         font-size:24px;
     }
-
     .hero-text p{
         font-size:15px;
     }
-
     footer{
         font-size:14px;
     }
@@ -197,8 +191,3 @@ footer{
 html, body, *, *::before, *::after{
     cursor:var(--cursor-coffee);
 }
-
-
-
-
-
