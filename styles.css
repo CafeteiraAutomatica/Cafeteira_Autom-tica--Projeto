@@ -198,7 +198,7 @@ footer{
     flex-direction:column;
     justify-content:flex-start;
     align-items:center;     
-    height:36vh;
+    height:40vh;
     padding:80px 20px 0 20px;
     text-align:center;
 }
@@ -220,6 +220,4 @@ footer{
     color:var(--marrom-claro);
     letter-spacing:1px;
 }
-
-
 
