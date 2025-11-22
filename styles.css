@@ -39,6 +39,14 @@ header{
     z-index:10;
 }
 
+.infografico img{
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .logo{
     font-size:32px;
 }
@@ -139,3 +147,4 @@ footer{
         font-size:17px;
     }
 }
+
