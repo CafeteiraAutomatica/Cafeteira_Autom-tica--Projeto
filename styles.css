@@ -4,21 +4,21 @@
 
 @font-face {
     font-family: 'Eyesome';
-    src: url('Eyesome-Regular.woff2') format('woff2');
+    src: url('Eyesome-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Eyesome';
-    src: url('Eyesome-Italic.woff2') format('woff2');
+    src: url('Eyesome-Italic.otf') format('opentype');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Eyesome';
-    src: url('Eyesome-Script.woff2') format('woff2');
+    src: url('Eyesome-Script.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
@@ -220,4 +220,5 @@ footer{
     color:var(--marrom-claro);
     letter-spacing:1px;
 }
+
 
