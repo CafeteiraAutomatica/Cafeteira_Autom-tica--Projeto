@@ -214,9 +214,11 @@ footer{
 }
 
 .inicio-subtitulo{
+    font-family: 'Montserrat';
     font-size:clamp(20px, 4vw, 40px);
     margin-top:10px;
     color:var(--marrom-claro);
     letter-spacing:1px;
 }
+
 
