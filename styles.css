@@ -204,7 +204,7 @@ footer{
 }
 
 .inicio-titulo{
-    font-family: 'Montserrat';
+    font-family: 'Eyesome';
     font-size: clamp(40px, 7vw, 70px);
     font-weight:750;
     letter-spacing:1px;
@@ -219,3 +219,4 @@ footer{
     color:var(--marrom-claro);
     letter-spacing:1px;
 }
+
