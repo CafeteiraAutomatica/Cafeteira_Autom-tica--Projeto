@@ -6,7 +6,7 @@
     --marrom-claro:#a67c52;
     --creme:#e3d4c3;
     --branco:#ffffff;
-    --cursor-coffee:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 72 72'><text y='50%' x='50%' dominant-baseline='middle' text-anchor='middle' font-size='60'>☕</text></svg>") 8 8, auto;
+    --cursor-coffee:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 72 72'><text y='50%' x='50%' dominant-baseline='middle' text-anchor='middle' font-size='40'>☕</text></svg>") 4 4, auto;
 }
 
 *{
@@ -76,25 +76,36 @@ header{
     flex:1;
 }
 
-.hero-large{
-    background:var(--branco);
-    padding:45px;
+.capa-revista{
+    width:100%;
+    position:relative;
     border-radius:20px;
-    display:flex;
-    gap:45px;
-    align-items:center;
-    margin-bottom:50px;
-    box-shadow:0 6px 20px rgba(0,0,0,0.1);
+    overflow:hidden;
+    box-shadow:0 6px 25px rgba(0,0,0,0.15);
+    margin-bottom:40px;
 }
 
-.hero-text h1{
-    font-size:40px;
-    margin-bottom:18px;
+.capa-revista img{
+    width:100%;
+    display:block;
 }
 
-.hero-text p{
+.capa-texto{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background:rgba(58,42,32,0.78);
+    padding:35px;
+    color:white;
+}
+
+.capa-texto h1{
+    font-size:42px;
+    margin-bottom:6px;
+}
+
+.capa-texto p{
     font-size:19px;
-    line-height:1.7;
 }
 
 .content-box{
@@ -106,18 +117,8 @@ header{
     margin-top:35px;
 }
 
-.infografico{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px 0;
-}
-
-.infografico img{
-    width:85%;
-    max-width:600px;
-    height:auto;
-    display:block;
+.destaque{
+    border-left:8px solid var(--marrom-claro);
 }
 
 footer{
@@ -128,10 +129,12 @@ footer{
     margin-top:auto;
 }
 
-@media(max-width:950px){
-    .hero-large{
-        flex-direction:column;
-        text-align:center;
+@media(max-width:900px){
+    .capa-texto h1{
+        font-size:32px;
+    }
+    .capa-texto p{
+        font-size:17px;
     }
 }
 
@@ -146,11 +149,10 @@ footer{
         justify-content:center;
         gap:12px;
     }
-    .hero-text h1{
-        font-size:30px;
+    .capa-texto{
+        padding:22px;
     }
-    .hero-text p{
-        font-size:17px;
+    .capa-texto h1{
+        font-size:26px;
     }
 }
-
