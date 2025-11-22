@@ -3,7 +3,7 @@
 
 :root{
     --fundo:#f4ece3;
-    --marrom:#4a2b12;
+    --marrom:#381d08;
     --marrom-claro:#a67c52;
     --creme:#e3d4c3;
     --branco:#ffffff;
@@ -157,5 +157,6 @@ footer{
         font-size:14px;
     }
 }
+
 
 
