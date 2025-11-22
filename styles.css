@@ -159,11 +159,11 @@ footer{
 }
 .inicio-container{
     text-align:center;
-    margin-bottom:35px;
+    margin-bottom:48px;
 }
 
 .inicio-titulo{
-    font-size:36px;
+    font-size:48px;
     font-weight:700;
     letter-spacing:1.5px;
     text-transform:uppercase;
@@ -171,8 +171,9 @@ footer{
 }
 
 .inicio-subtitulo{
-    font-size:16px;
-    margin-top:6px;
+    font-size:32px;
+    margin-top:8px;
     color:var(--marrom-claro);
     letter-spacing:1px;
 }
+
