@@ -6,7 +6,7 @@
     --marrom-claro:#a67c52;
     --creme:#e3d4c3;
     --branco:#ffffff;
-    --cursor-coffee:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 72 72'><text y='50%' x='50%' dominant-baseline='middle' text-anchor='middle' font-size='60'>☕</text></svg>") 8 8, auto;
+    --cursor-coffee:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 72 72'><text y='50%' x='50%' dominant-baseline='middle' text-anchor='middle' font-size='50'>☕</text></svg>") 6 6, auto;
 }
 
 *{
@@ -152,4 +152,33 @@ footer{
     .hero-text p{
         font-size:17px;
     }
+}
+
+.inicio-container{
+    max-width:900px;
+    margin:0 auto 45px auto;
+    padding:40px 25px;
+    border-top:4px double var(--marrom);
+    border-bottom:4px double var(--marrom);
+    background:var(--branco);
+    border-radius:10px;
+}
+
+.inicio-titulo{
+    font-family:'Georgia',serif;
+    font-size:3rem;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    font-weight:700;
+    color:var(--marrom);
+    text-align:center;
+    margin-bottom:12px;
+}
+
+.inicio-subtitulo{
+    font-family:'Georgia',serif;
+    font-size:1.2rem;
+    color:var(--marrom-claro);
+    text-align:center;
+    margin-bottom:25px;
 }
