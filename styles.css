@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;700&display=swap');
 
 
 :root{
@@ -190,6 +190,7 @@ footer{
     height: auto;
     box-shadow: 0 6px 20px rgba(0,0,0,0.15);
     margin: 30px;
+
 
 
 
