@@ -110,12 +110,12 @@ header{
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:20px 0;
+    padding:24px 0;
 }
 
 .infografico img{
-    width:80%;
-    max-width:500px;
+    width:85%;
+    max-width:600px;
     height:auto;
     display:block;
 }
@@ -188,3 +188,4 @@ footer{
     height:auto;
     box-shadow:0 6px 20px rgba(0,0,0,0.15);
 }
+
