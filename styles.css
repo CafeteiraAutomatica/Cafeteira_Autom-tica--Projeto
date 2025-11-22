@@ -114,8 +114,8 @@ header{
 }
 
 .infografico img{
-    width:80%;
-    max-width:500px;
+    width:85%;
+    max-width:600px;
     height:auto;
     display:block;
 }
@@ -153,3 +153,4 @@ footer{
         font-size:17px;
     }
 }
+
