@@ -106,6 +106,8 @@ header{
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
     font-size:16px;
     margin-top:25px;
+    text-align: center;
+    align-itens: center;
 }
 
 .infografico{
@@ -184,6 +186,7 @@ footer{
     color:var(--marrom-claro);
     letter-spacing:1px;
 }
+
 
 
 
