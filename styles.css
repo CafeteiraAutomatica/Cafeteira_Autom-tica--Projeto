@@ -201,7 +201,7 @@ footer{
         font-size:24px;
     }
     .hero-text p{
-        font-size:14px;
+        font-size:20px;
     }
 }
 
@@ -230,6 +230,7 @@ footer{
     color:var(--marrom-claro);
     letter-spacing:1px;
 }
+
 
 
 
