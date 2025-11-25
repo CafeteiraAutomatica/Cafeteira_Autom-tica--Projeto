@@ -45,7 +45,7 @@ html, body, *, *::before, *::after{
 }
 
 body{
-    font-family:'Noto Kufi Arabic',sans-serif;
+    font-family:'Arapey',sans-serif;
     background:var(--fundo);
     color:var(--marrom);
     min-height:100vh;
@@ -215,12 +215,12 @@ footer{
 }
 
 .inicio-subtitulo{
-    font-family: 'Arapey', serif;
     font-size:clamp(17px, 2vw, 28px);
     margin-top:10px;
     color:var(--marrom-claro);
     letter-spacing:1px;
 }
+
 
 
 
