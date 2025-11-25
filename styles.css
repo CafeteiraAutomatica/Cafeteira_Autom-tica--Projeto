@@ -46,6 +46,7 @@ html, body, *, *::before, *::after{
 
 body{
     font-family:'Arapey',sans-serif;
+    font-size: 20px;
     background:var(--fundo);
     color:var(--marrom);
     min-height:100vh;
@@ -220,6 +221,7 @@ footer{
     color:var(--marrom-claro);
     letter-spacing:1px;
 }
+
 
 
 
