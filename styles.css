@@ -134,6 +134,11 @@ header{
     text-align: left;
 }
 
+.content-box p {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
 .content-box.destaque {
     text-align: left;
 }
@@ -221,6 +226,7 @@ footer{
     color:var(--marrom-claro);
     letter-spacing:1px;
 }
+
 
 
 
