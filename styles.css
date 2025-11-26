@@ -4,8 +4,8 @@
 
 
 @font-face {
-    font-family: 'Eyesome';
-    src: url('Eyesome-Regular.otf') format('opentype');
+    font-family: 'Stolen Love';
+    src: url('Stolen-Love.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
@@ -215,7 +215,7 @@ footer{
 }
 
 .inicio-titulo{
-    font-family:'Eyesome';
+    font-family:'Stolen Love';
     font-size:clamp(60px, 8vw, 100px);
     font-weight:400;
     letter-spacing:1px;
@@ -229,6 +229,7 @@ footer{
     color:var(--marrom-claro);
     letter-spacing:1px;
 }
+
 
 
 
