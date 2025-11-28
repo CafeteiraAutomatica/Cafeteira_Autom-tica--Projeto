@@ -166,7 +166,8 @@ img {
     padding:20px 0;
 }
 
-.infografico img{
+.infografico img{
+    width: 600px
     max-width:100%;
     height:auto;
     display:block;
@@ -232,6 +233,7 @@ footer{
     color:var(--marrom-claro);
     letter-spacing:1px;
 }
+
 
 
 
