@@ -1,28 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
 
-
 @font-face {
     font-family: 'Stolen Love';
     src: url('Stolen-Love.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
-/*
-@font-face {
-    font-family: 'Eyesome';
-    src: url('Eyesome-Italic.otf') format('opentype');
-    font-weight: 400;
-    font-style: italic;
-}
 
-@font-face {
-    font-family: 'Eyesome';
-    src: url('Eyesome-Script.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
-}
-*/
 :root{
     --fundo:#f4ece3;
     --marrom:#381d08;
@@ -106,27 +91,6 @@ img {
     flex:1;
 }
 
-.hero-large{
-    background:var(--branco);
-    padding:35px;
-    border-radius:15px;
-    display:flex;
-    gap:25px;
-    align-items:center;
-    margin-bottom:40px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.hero-text h1{
-    font-size:30px;
-    margin-bottom:15px;
-}
-
-.hero-text p{
-    font-size:20px;
-    line-height:1.7;
-}
-
 .content-box {
     background: var(--branco);
     padding: 30px;
@@ -136,27 +100,10 @@ img {
     text-align: left;
 }
 
-.content-box p {
-    font-size: 20px;
-    line-height: 1.7;
-}
-
 .content-box h1 {
     font-size: 35px;
     margin-bottom: 20px;
     line-height: 1.3;
-}
-
-.content-box.destaque {
-    text-align: left;
-}
-
-.content-box.big-box {
-    text-align: center; 
-}
-
-.content-box.small-box {
-    text-align: left;
 }
 
 .infografico{
@@ -174,6 +121,65 @@ img {
     border-radius:10px;
 }
 
+.tabela-cafe {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background: var(--branco);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.tabela-cafe thead {
+    background: var(--marrom);
+    color: var(--branco);
+}
+
+.tabela-cafe th,
+.tabela-cafe td {
+    padding: 15px 18px;
+    text-align: left;
+    border-bottom: 1px solid var(--creme);
+}
+
+.tabela-cafe tr:last-child td {
+    border-bottom: none;
+}
+
+.tabela-cafe tbody tr:hover {
+    background: var(--creme);
+    transition: .3s;
+}
+
+@media (max-width: 700px) {
+    .tabela-cafe thead {
+        display: none;
+    }
+    
+    .tabela-cafe tr {
+        display: block;
+        margin-bottom: 15px;
+        background: var(--branco);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .tabela-cafe td {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px;
+        border-bottom: 1px solid var(--creme);
+    }
+
+    .tabela-cafe td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: var(--marrom);
+    }
+}
+
 footer{
     background:var(--creme);
     text-align:center;
@@ -182,77 +188,3 @@ footer{
     font-size:14px;
     margin-top:auto;
 }
-
-@media(max-width:950px){
-    .hero-large{
-        flex-direction:column;
-        text-align:center;
-    }
-}
-
-@media(max-width:600px){
-    header{
-        flex-direction:column;
-        gap:10px;
-        text-align:center;
-    }
-    .nav-links{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:10px;
-    }
-    .hero-text h1{
-        font-size:24px;
-    }
-    .hero-text p{
-        font-size:20px;
-    }
-}
-
-.inicio-container {
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start;
-    align-items:center;     
-    padding:80px 20px 0 20px;
-    text-align:center;
-}
-
-.inicio-titulo{
-    font-family:'Stolen Love';
-    font-size:clamp(60px, 8vw, 100px);
-    font-weight:400;
-    letter-spacing:1px;
-    color:var(--marrom);
-    line-height:1.1;
-}
-
-.inicio-subtitulo{
-    font-size:clamp(17px, 2vw, 28px);
-    margin-top:10px;
-    color:var(--marrom-claro);
-    letter-spacing:1px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
