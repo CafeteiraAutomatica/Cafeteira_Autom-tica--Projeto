@@ -166,9 +166,8 @@ img {
     padding:20px 0;
 }
 
-.infografico img{
-    width:85%;
-    max-width:600px;
+.infografico img{
+    max-width:100%;
     height:auto;
     display:block;
     border-radius:10px;
