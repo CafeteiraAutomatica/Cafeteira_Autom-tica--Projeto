@@ -88,89 +88,64 @@ header{
     margin-bottom: 20px;
 }
 
-/* tabela estilizada */
 .tabela-cafe {
     width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    margin-top: 30px;
-    background: var(--branco);
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    border-collapse: collapse;
     font-size: 18px;
 }
 
-.tabela-cafe thead tr {
-    background: var(--marrom);
+.tabela-cafe th,
+.tabela-cafe td {
+    border: 1px solid #b08b5b;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.tabela-cafe thead {
+    background-color: #381d08;
+    color: #fff;
+}
+
+.tabela-cafe tbody tr:nth-child(even) {
+    background-color: #f0e8df;
+}
+
+.tabela-cafe tbody tr:hover {
+    background-color: #d8cbb8;
 }
 
 .tabela-cafe th {
-    color: var(--branco);
-    padding: 18px;
-    text-align: left;
-    font-size: 19px;
-    letter-spacing: 0.5px;
+    background-color: #a67c52;
+    font-weight: bold;
 }
 
-.tabela-cafe td {
-    padding: 16px 18px;
-    background: var(--branco);
-    border-bottom: 1px solid #e0d5c9;
-}
+@media (max-width: 700px) {
+    .tabela-cafe, .tabela-cafe thead, .tabela-cafe tbody, .tabela-cafe th, .tabela-cafe td, .tabela-cafe tr {
+        display: block;
+    }
 
-.tabela-cafe tbody tr:last-child td {
-    border-bottom: none;
-}
-
-.tabela-cafe tbody tr:hover td {
-    background: #f0e8df;
-    transition: .25s;
-}
-
-.tabela-cafe tbody tr td:first-child {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
-
-.tabela-cafe tbody tr td:last-child {
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
-
-@media (max-width: 750px) {
-    .tabela-cafe thead {
+    .tabela-cafe thead tr {
         display: none;
     }
 
-    .tabela-cafe {
-        border-radius: 12px;
-    }
-
-    .tabela-cafe tr {
-        display: block;
-        background: var(--branco);
-        margin-bottom: 18px;
-        border-radius: 12px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    .tabela-cafe tbody tr {
+        margin-bottom: 15px;
+        border: 1px solid #b08b5b;
+        border-radius: 6px;
         padding: 10px;
     }
 
     .tabela-cafe td {
         display: flex;
         justify-content: space-between;
-        padding: 14px 10px;
-        border-bottom: 1px solid #eee1d5;
+        padding: 8px 12px;
+        border: none;
+        border-bottom: 1px solid #b08b5b;
     }
 
     .tabela-cafe td::before {
         content: attr(data-label);
         font-weight: bold;
-        color: var(--marrom);
-    }
-
-    .tabela-cafe tbody tr td:last-child {
-        border-bottom: none;
     }
 }
 
