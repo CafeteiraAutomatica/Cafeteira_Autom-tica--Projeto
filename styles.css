@@ -167,8 +167,7 @@ img {
 }
 
 .infografico img{
-    width: 600px
-    max-width:100%;
+    max-width:85%;
     height:auto;
     display:block;
     border-radius:10px;
@@ -233,6 +232,7 @@ footer{
     color:var(--marrom-claro);
     letter-spacing:1px;
 }
+
 
 
 
