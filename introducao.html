@@ -51,36 +51,23 @@
     <p>Produzido por alunos do IFSP.</p>
 </footer>
 
-<div class="gif-lateral gif-esq" id="gifEsq">
-    <div class="gif-close" data-target="gifEsq">×</div>
-    <img src="cafeteira.gif" alt="gif cafeteira esquerda">
-</div>
-
 <div class="gif-lateral gif-dir" id="gifDir">
     <div class="gif-close" data-target="gifDir">×</div>
     <img src="cafeteira.gif" alt="gif cafeteira direita">
 </div>
 
 <script>
-    function mostrarGifs() {
-        document.getElementById("gifEsq").style.display = "flex";
+    function mostrarGif() {
         document.getElementById("gifDir").style.display = "flex";
     }
 
-    setTimeout(mostrarGifs, 5000);
+    setTimeout(mostrarGif, 5000);
 
-    document.querySelectorAll(".gif-close").forEach(btn => {
-        btn.addEventListener("click", () => {
-            const alvo = btn.getAttribute("data-target");
-            document.getElementById(alvo).style.display = "none";
-
-            setTimeout(() => {
-                mostrarGifs();
-            }, 5000);
-        });
+    document.querySelector(".gif-close").addEventListener("click", () => {
+        document.getElementById("gifDir").style.display = "none";
+        setTimeout(mostrarGif, 5000);
     });
 </script>
-
 
 </body>
 </html>
