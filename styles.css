@@ -282,6 +282,7 @@ footer{
         width:100%;
     }
     .gif-box{
-        display:none;
+        display:none !important;
     }
 }
+
