@@ -222,12 +222,12 @@ footer{
     right:20px;
 }
 
-.gif-lateral img{
-    width:250px;
-    height:650px;
-    max-height:65vh;
-    object-fit:cover;
-    border-radius:8px;
+.gif-lateral img {
+    width: auto;
+    height: 65vh;
+    max-height: 650px;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .gif-close{
@@ -277,3 +277,4 @@ footer{
         width:120px;
     }
 }
+
