@@ -58,14 +58,20 @@
 
 <script>
     function mostrarGif() {
-        document.getElementById("gifDir").style.display = "flex";
+        const gif = document.getElementById("gifDir");
+        gif.style.display = "flex";
     }
 
     setTimeout(mostrarGif, 5000);
 
-    document.querySelector(".gif-close").addEventListener("click", () => {
-        document.getElementById("gifDir").style.display = "none";
-        setTimeout(mostrarGif, 5000);
+    document.querySelectorAll(".gif-close").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const alvo = btn.getAttribute("data-target");
+            document.getElementById(alvo).style.display = "none";
+            setTimeout(() => {
+                mostrarGif();
+            }, 5000);
+        });
     });
 </script>
 
