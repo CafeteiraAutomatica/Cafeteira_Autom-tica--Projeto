@@ -172,7 +172,7 @@ text-align:center;
 .inicio-titulo{
 font-family:'Stolen Love';
 font-size:clamp(60px, 8vw, 100px);
-font-weight:400;
+font-weight:500;
 letter-spacing:1px;
 color:var(--marrom);
 line-height:1.1;
@@ -290,5 +290,6 @@ margin-right:10px;
 border-bottom:none;
 }
 }
+
 
 
