@@ -51,5 +51,20 @@
     <p>Produzido por alunos do IFSP.</p>
 </footer>
 
+<div class="popup-gif" id="popupGif">
+    <div class="popup-close" id="popupClose">×</div>
+    <img src="cafeteira.gif" alt="gif da cafeteira">
+</div>
+
+<script>
+    setTimeout(() => {
+        document.getElementById("popupGif").style.display = "block";
+    }, 5000);
+
+    document.getElementById("popupClose").addEventListener("click", () => {
+        document.getElementById("popupGif").style.display = "none";
+    });
+</script>
+
 </body>
 </html>
