@@ -73,11 +73,6 @@ img {
     transition:.25s;
 }
 
-.nav-links a:hover{
-    background:var(--marrom-claro);
-    color:var(--branco);
-}
-
 .nav-links a:hover,
 .nav-links a.active{
     background:var(--marrom-claro);
@@ -150,8 +145,6 @@ img {
 }
 
 .tabela-cafe tbody tr:hover {
-    background: var(--creme);
-    transition: .3s;
     background: #efe6dc;
     transition: .2s;
 }
