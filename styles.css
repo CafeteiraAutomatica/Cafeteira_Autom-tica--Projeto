@@ -294,7 +294,6 @@ footer{
     }
 }
 
-/* ADICIONADO PARA O GIF FICAR SEMPRE À DIREITA E RESPONSIVO */
 .hero-large{
     display:flex;
     flex-direction:row;
@@ -312,7 +311,7 @@ footer{
     display:block;
 }
 
-/* CELULAR → GIF AINDA NA DIREITA, MAS ABAIXO DO TEXTO */
+
 @media(max-width:850px){
     .hero-large{
         flex-direction:row;
@@ -326,16 +325,23 @@ footer{
 
 @media(max-width:600px){
     .hero-large{
-        flex-direction:row;
-        justify-content:flex-end;
+        flex-direction:column;
+        align-items:flex-end;
+        gap:15px;
     }
 
     .hero-text{
-        width:65%;
+        width:100%;
     }
 
     .gif-box{
-        width:35%;
+        width:150px;
         max-width:150px;
     }
+
+    .gif-box img{
+        width:100%;
+        height:auto;
+    }
 }
+
