@@ -49,7 +49,7 @@ img{
     margin:auto;
     flex:1;
     display:flex;
-    gap:20px;
+    flex-direction: column;
 }
 
 header{
@@ -59,7 +59,7 @@ header{
     align-items:center;
     justify-content:space-between;
     box-shadow:0 2px 10px rgba(0,0,0,0.15);
-    position: relative;
+    position:relative;
     z-index:10;
 }
 
@@ -126,8 +126,8 @@ header{
     text-align:left;
 }
 
-.content-box h1{
-    font-size:35px;
+.content-box h1,
+.content-box h2{
     margin-bottom:20px;
     line-height:1.3;
 }
@@ -161,39 +161,6 @@ footer{
     font-weight:700;
     font-size:14px;
     margin-top:auto;
-}
-
-.tabela-estilizada{
-    width:100%;
-    border-collapse:collapse;
-    font-size:18px;
-    background:#fdfaf7;
-    color:#614028;
-    border-radius:10px;
-    overflow:hidden;
-    margin-top:25px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.tabela-estilizada thead{
-    background:var(--marrom-claro);
-    color:white;
-}
-
-.tabela-estilizada th,
-.tabela-estilizada td{
-    padding:18px 20px;
-    text-align:left;
-    border-bottom:1px solid var(--creme);
-}
-
-.tabela-estilizada tbody tr:nth-child(even){
-    background:#f3e7dd;
-}
-
-.tabela-estilizada tbody tr:hover{
-    background:#ecdccf;
-    transition:.2s;
 }
 
 .gif-lateral{
@@ -230,52 +197,33 @@ footer{
     font-size:18px;
     font-weight:bold;
     cursor:pointer;
-}
-
-@media(max-width:950px){
-    .hero-large{
-        flex-direction:column;
-        text-align:center;
-    }
+    z-index:10000;
 }
 
 @media(max-width:700px){
-    .nav-links{
-        flex-direction: column;
-        gap:10px;
-        position: absolute;
-        top:60px;
-        right:20px;
-        background: var(--marrom);
-        padding:15px;
-        border-radius:10px;
-        display:none;
-    }
-
-    .nav-links.show{
+    .container{
         display:flex;
+        flex-direction:row;
+        gap:20px;
     }
 
-    .menu-toggle{
-        display:block;
+    .container > *:not(.gif-lateral){
+        flex:1;
     }
 
     .gif-lateral{
         position: relative;
-        transform: none;
         top: auto;
         right: auto;
+        transform: none;
+        margin-top:0;
+        justify-content:center;
         width: 120px;
-        justify-content: center;
-        align-self: flex-start;
-        margin-top: 0;
     }
 
-    .container {
-        flex-direction: row;
-    }
-
-    .container > *:not(.gif-lateral){
-        flex: 1;
+    .gif-lateral img{
+        width:100%;
+        height:auto;
+        max-height:none;
     }
 }
