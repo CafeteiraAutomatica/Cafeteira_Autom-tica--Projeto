@@ -62,18 +62,25 @@
 </div>
 
 <script>
-    setTimeout(() => {
+    function mostrarGifs() {
         document.getElementById("gifEsq").style.display = "flex";
         document.getElementById("gifDir").style.display = "flex";
-    }, 5000);
+    }
+
+    setTimeout(mostrarGifs, 5000);
 
     document.querySelectorAll(".gif-close").forEach(btn => {
         btn.addEventListener("click", () => {
             const alvo = btn.getAttribute("data-target");
             document.getElementById(alvo).style.display = "none";
+
+            setTimeout(() => {
+                mostrarGifs();
+            }, 5000);
         });
     });
 </script>
+
 
 </body>
 </html>
