@@ -51,18 +51,27 @@
     <p>Produzido por alunos do IFSP.</p>
 </footer>
 
-<div class="popup-gif" id="popupGif">
-    <div class="popup-close" id="popupClose">×</div>
-    <img src="cafeteira.gif" alt="gif da cafeteira">
+<div class="gif-lateral gif-esq" id="gifEsq">
+    <div class="gif-close" data-target="gifEsq">×</div>
+    <img src="cafeteira.gif" alt="gif cafeteira esquerda">
+</div>
+
+<div class="gif-lateral gif-dir" id="gifDir">
+    <div class="gif-close" data-target="gifDir">×</div>
+    <img src="cafeteira.gif" alt="gif cafeteira direita">
 </div>
 
 <script>
     setTimeout(() => {
-        document.getElementById("popupGif").style.display = "block";
+        document.getElementById("gifEsq").style.display = "flex";
+        document.getElementById("gifDir").style.display = "flex";
     }, 5000);
 
-    document.getElementById("popupClose").addEventListener("click", () => {
-        document.getElementById("popupGif").style.display = "none";
+    document.querySelectorAll(".gif-close").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const alvo = btn.getAttribute("data-target");
+            document.getElementById(alvo).style.display = "none";
+        });
     });
 </script>
 
