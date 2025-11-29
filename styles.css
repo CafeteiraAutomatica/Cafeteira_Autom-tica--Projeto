@@ -204,7 +204,8 @@ footer{
 }
 
 .gif-lateral img{
-    width:170px;
+    width:200px;
+    height:500px;
     border-radius:8px;
 }
 
@@ -229,3 +230,4 @@ footer{
         width:120px;
     }
 }
+
