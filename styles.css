@@ -185,7 +185,7 @@ background:var(--creme);
 text-align:center;
 padding:15px;
 font-weight:700;
-font-size:14px;
+font-size:17px;
 margin-top:auto;
 }
 
@@ -215,7 +215,6 @@ font-size:20px;
 }
 }
 
-/* TABELA NOVA ESTILIZADA */
 
 .tabela-estilizada{
 width:100%;
@@ -286,3 +285,4 @@ margin-right:10px;
 border-bottom:none;
 }
 }
+
